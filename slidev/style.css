@@ -1,0 +1,218 @@
+:root{
+    /* 通常のテキスト中で使用する強調カラー */
+    --highlight-code-color: rgb(255, 221, 96);
+    --highlight-code-background-color: rgb(225, 255, 0, 0.1);
+    
+    /* コード中で使用する強調カラー */
+    --highlight-code-color2: rgb(255, 221, 96);
+    --highlight-code-background-color2: rgba(255, 253, 120, 0.12);
+    /* --highlight-code-background-color2: rgba(255, 255, 0, 0.15); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+    scale: 120%;
+    padding-top: 0px;
+    /* letter-spacing: 1px; */
+    /* font-weight: 900; */
+}
+
+.section-title-jp {
+    scale: 100%;
+    padding-top: 2px;
+}
+.section-title-en {
+    scale: 100%;
+    padding-top: 2px;
+}
+
+.safe {
+    color: rgb(100, 255, 150);
+    /* background-color: rgb(0, 255, 150, 0.18); */
+    background-color: rgb(0, 255, 150, 0.02);
+}
+
+.warn {
+    /* color: rgb(255, 120, 100); */
+    color: rgb(255, 108, 108);
+    background-color: rgb(255, 118, 100,0.05);
+    /* background-color: rgb(255, 0, 0, 0.15); */
+    /* background-color: rgb(255, 0, 0, 0.0); */
+}
+
+/*  */
+.sub-text{
+    font-size: 75%;
+}
+
+/*  */
+img.right-bottom-image{
+    position: absolute;
+    right: 120px;
+    bottom: 70px;
+}
+
+.slidev-layout h1 {
+    color: #f4f4f4;
+}
+
+.slidev-layout h2 {
+    /* color: var(--slidev-theme-primary); */
+}
+
+/* 箇条書きのすき間の調整 */
+li {
+    height: 36px;
+}
+
+ul > div {
+    line-height: 32px;
+}
+
+.highlight {
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+
+span.line.slidev-vclick-target.highlighted {
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+span.line.slidev-vclick-target.dishonored {
+    opacity: 1.0;
+}
+
+.path {
+    /* background-color: red; */
+    width: 2000px;
+    padding: 0px;
+    margin-top: 2px;
+
+/* <!-- <Transform scale=60% style="line-height:50%; width:700px ; padding-top:5px; left:10px;">Packages/com.unity.render-pipelines.core/ShaderLibrary/API/<span class="highlight">GLES3.hlsl</span></Transform> --> */
+
+}
+
+/* テーブルの列の高さ */
+tbody > tr {
+    /* background-color: red; */
+    font-size: 90%;
+}
+
+
+/* 番号付きリスト内のcodeに色を付ける */
+ol > li > code{
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+
+/* 順序なしリスト内のcodeに色を付ける */
+ul > li > code{
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+ul > li > b {
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+
+b {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: var(--highlight-code-color);
+    background-color: var(--highlight-code-background-color);
+}
+
+/* 見出し */
+h1 {
+    white-space: 0px;
+    line-height: 0px;
+    /* margin: 0px;
+    padding: 0px;
+    height: 0px; */
+}
+
+h2 {
+    /* margin-bottom: 18px; */
+    margin-bottom: 24px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    padding-bottom: 7px;
+}
+
+.left_col {
+    background-color: rgba(255, 253, 100, 0.07);
+}
+
+.right_col {
+    background-color: rgba(255, 253, 100, 0.07);
+}
+
+pre.slidev-code {
+    /* background-color: red; */
+    /* word-break: break-all; */
+    /* width: 300px; */
+
+    /* テキストを途中で折り返す */
+    /* text-wrap: wrap; */
+    text-wrap: balance;
+
+    /* 単語の途中で改行する */
+    word-break: break-all;
+
+    word-wrap: break-word;
+}
+/* 
+pre.slidev-code > code{
+    flex-wrap: wrap;
+    background-color: red;
+    line-break: normal;
+    width: 100px;
+} */
+
+
+/* grid grid-cols-2 で囲った部分 */
+#slideshow > div.slidev-layout.default.slidev-page > div.grid.grid-cols-2 > div:nth-child(1) {
+    /* background-color: red; */
+    width: 400px;
+}
+#slideshow > div.slidev-layout.default.slidev-page > div.grid.grid-cols-2 > div:nth-child(2) {
+    /* background-color: red; */
+    position: relative;
+    right: 30px;
+    width: 470px;
+}
+/* #slideshow > div.slidev-layout.default.slidev-page.slidev-page-5 > div > div:nth-child(2) > div > div > pre > code > span.line.slidev-vclick-target.highlighted {
+    color: var(--highlight-code-color2);
+    background-color: var(--highlight-code-background-color2);
+    font-weight: bold;
+} */
+
+
+/* #slideshow > div.slidev-layout.default.slidev-page.slidev-page-5 > div > div:nth-child(1) > div > div > pre > code > span {
+    opacity: 1.0;
+}
+
+#slideshow > div.slidev-layout.default.slidev-page.slidev-page-5 > div > div:nth-child(2) > div > div > pre > code > span {
+    opacity: 1.0;
+} */
+
+/* #slideshow > div.slidev-layout.default.slidev-page.slidev-page-11 > div > div:nth-child(1) > div > div > div > pre > code > span {
+    opacity: 1.0;
+} */
+
+/*
+アニメーション 
+https://ja.sli.dev/guide/animations.html#%E8%A6%81%E7%B4%A0%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3 
+*/
+
+.slidev-vclick-target {
+  transition: opacity 200ms ease;
+}
+
+.slidev-vclick-hidden {
+    opacity: 0;
+}
